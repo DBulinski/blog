@@ -11,10 +11,73 @@ export const button = style({
 });
 
 export const menu = style({
-  position: "fixed",
-  height: "100%",
-  width: "100%",
-  top: 0,
-  left: 0,
-  backgroundColor: vars.color.white,
+  background: vars.backgrounds.gradient,
+});
+
+export const menuHeader = style({
+  display: "flex",
+  alignItems: "baseline",
+  justifyContent: "space-between",
+  paddingLeft: vars.spacing.left,
+  paddingTop: vars.spacing.top,
+  paddingRight: vars.spacing.right,
+  color: vars.color.white,
+});
+
+export const menuList = style({
+  listStyle: "none",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  fontFamily: "Orbitron, sans-serif",
+  fontWeight: 800,
+  textAlign: "center",
+  margin: 0,
+  padding: 0,
+  paddingTop: vars.spacing.x7,
+  gap: vars.spacing.x5,
+
+  "@media": {
+    "screen and (min-width: 1024px)": {
+      paddingTop: vars.spacing.x4,
+      gap: vars.spacing.x4,
+    },
+  },
+});
+
+export const menuListItem = style({
+  color: vars.color.black,
+  textDecoration: "none",
+  fontSize: "10vmin",
+  transition: "color 0.3s",
+
+  ":hover": {
+    color: vars.color.white,
+  },
+});
+
+export const primary = style({
+  color: vars.color.primary,
+  transition: "color 0.3s",
+
+  get selectors() {
+    return {
+      [`${menuListItem}:hover &`]: {
+        color: vars.color.white,
+      },
+    };
+  },
+});
+
+export const white = style({
+  color: vars.color.white,
+  transition: "color 0.3s",
+
+  get selectors() {
+    return {
+      [`${menuListItem}:hover &`]: {
+        color: vars.color.primary,
+      },
+    };
+  },
 });

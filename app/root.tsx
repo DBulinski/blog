@@ -17,7 +17,7 @@ export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.gstatic.com" },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Orbitron:wght@800&display=swap",
   },
   { rel: "stylesheet", href: cssBundleHref as string },
 ];

@@ -9,8 +9,10 @@ import {
 import { type AriaDialogProps, useDialog } from "react-aria";
 import { createPortal } from "react-dom";
 import * as classes from "./dialog.css";
+
 interface DialogProps extends AriaDialogProps {
   title?: ReactElement;
+  className?: string;
   children: ReactNode;
   onClose: () => void;
 }
@@ -19,6 +21,7 @@ export const Dialog: FC<DialogProps> = ({
   title,
   children,
   onClose,
+  className = "",
   ...props
 }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -34,7 +37,7 @@ export const Dialog: FC<DialogProps> = ({
     <div
       onKeyDown={handleKeyDown}
       {...dialogProps}
-      className={classes.dialog}
+      className={`${classes.dialog} ${className}`.trim()}
       ref={ref}
     >
       {title && cloneElement(title, titleProps)}

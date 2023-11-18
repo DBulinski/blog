@@ -7,6 +7,7 @@ interface ButtonProps extends AriaButtonProps {
   className?: string;
   children: ReactNode;
 }
+
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, className = "", ...props }, ref) => {
     const buttonRef = useRef<HTMLButtonElement>(null);

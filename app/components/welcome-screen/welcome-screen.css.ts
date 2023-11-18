@@ -1,8 +1,8 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "~/theme.css";
 
 export const section = style({
-  backgroundImage:
-    "linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(99,101,102,1) 35%)",
+  backgroundImage: vars.backgrounds.gradient,
   height: "100dvh",
 
   "@media": {

@@ -9,6 +9,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import { themeClass } from "~/theme.css";
 import "./root.css";
 
 export const links: LinksFunction = () => [
@@ -30,7 +31,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className={themeClass}>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

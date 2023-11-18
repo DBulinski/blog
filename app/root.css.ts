@@ -11,6 +11,7 @@ globalStyle("body", {
 });
 
 globalStyle("*", {
+  boxSizing: "border-box",
   fontFamily: ["Roboto", "sans-serif"],
   fontWeight: 300,
 });

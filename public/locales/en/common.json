@@ -1,0 +1,9 @@
+{
+    "menu-home": "home",
+    "menu-blog": "blog",
+    "menu-about-me": "<1>about</1> <3>me</3>",
+    "menu-contact": "contact",
+    "go-to-homepage": "Go to homepage",
+    "open-menu": "Open menu",
+    "close-menu": "Close menu"
+}

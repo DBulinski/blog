@@ -8,7 +8,7 @@ const baseStyles: ComplexStyleRule = {
   background: "none",
   cursor: "pointer",
   textDecoration: "none",
-  color: vars.color.black,
+  color: "inherit",
   width: "max-content",
 };
 

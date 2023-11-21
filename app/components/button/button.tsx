@@ -21,7 +21,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...buttonProps}
         className={`${classes[variant]} ${className}`.trim()}
       >
-        {children} {variant === "primary" && <ArrowRight />}
+        {children} {variant === "primary" && <ArrowRight role="presentation" />}
       </button>
     );
   },

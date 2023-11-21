@@ -11,6 +11,7 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Footer } from "~/components/footer/footer";
 import { i18next } from "~/i18next/i18next.server";
 
 import { themeClass } from "~/theme.css";
@@ -62,6 +63,7 @@ export default function App() {
       </head>
       <body className={themeClass}>
         <Outlet />
+        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

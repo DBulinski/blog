@@ -6,7 +6,7 @@ import {
   type KeyboardEvent,
   useRef,
 } from "react";
-import { type AriaDialogProps, useDialog } from "react-aria";
+import { type AriaDialogProps, FocusScope, useDialog } from "react-aria";
 import { createPortal } from "react-dom";
 import * as classes from "./dialog.css";
 
@@ -34,15 +34,17 @@ export const Dialog: FC<DialogProps> = ({
   };
 
   return createPortal(
-    <div
-      onKeyDown={handleKeyDown}
-      {...dialogProps}
-      className={`${classes.dialog} ${className}`.trim()}
-      ref={ref}
-    >
-      {title && cloneElement(title, titleProps)}
-      {children}
-    </div>,
+    <FocusScope contain restoreFocus autoFocus>
+      <div
+        onKeyDown={handleKeyDown}
+        {...dialogProps}
+        className={`${classes.dialog} ${className}`.trim()}
+        ref={ref}
+      >
+        {title && cloneElement(title, titleProps)}
+        {children}
+      </div>
+    </FocusScope>,
     document.body,
   );
 };

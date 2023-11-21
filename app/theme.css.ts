@@ -8,14 +8,17 @@ export const [themeClass, vars] = createTheme({
   },
   backgrounds: {
     gradient:
-      "linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(99,101,102,1) 35%)",
+      "linear-gradient(50deg, rgba(30,30,30,1) 0%, rgba(99,101,102,1) 35%)",
   },
   fonts: {
     primary: "'Roboto', sans-serif",
     secondary: "'Orbitron', sans-serif",
   },
+  borders: {
+    action: "solid 6px #000",
+  },
   spacing: {
-    top: "90px",
+    top: "7vh",
     left: "10vw",
     right: "48px",
     x1: "4px",

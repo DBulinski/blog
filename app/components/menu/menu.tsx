@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { useRef, useState, type FC } from "react";
+import { useState, type FC } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "~/components/button/button";
 import { Dialog } from "~/components/dialog/dialog";
@@ -8,21 +8,13 @@ import * as classes from "./menu.css";
 
 export const Menu: FC = () => {
   const { t } = useTranslation();
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClose = () => {
-    setIsOpen(false);
-    menuButtonRef.current?.focus();
-  };
+  const handleClose = () => setIsOpen(false);
 
   return (
     <>
-      <Button
-        ref={menuButtonRef}
-        onPress={() => setIsOpen(true)}
-        className={classes.button}
-      >
+      <Button onPress={() => setIsOpen(true)} className={classes.button}>
         <MenuIcon title={t("open-menu")} />
       </Button>
       {isOpen && (

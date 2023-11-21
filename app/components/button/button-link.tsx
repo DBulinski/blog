@@ -39,7 +39,7 @@ export const ButtonLink: FC<InternalLinkProps | ExternalLinkProps> = ({
         {...linkProps}
         className={`${classes[variant]} ${className}`.trim()}
       >
-        {children} {variant === "primary" && <ArrowRight />}
+        {children} {variant === "primary" && <ArrowRight role="presentation" />}
       </a>
     );
   }
@@ -52,7 +52,7 @@ export const ButtonLink: FC<InternalLinkProps | ExternalLinkProps> = ({
         {...linkProps}
         className={`${classes[variant]} ${className}`.trim()}
       >
-        {children} {variant === "primary" && <ArrowRight />}
+        {children} {variant === "primary" && <ArrowRight role="presentation" />}
       </Link>
     );
   }

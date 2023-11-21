@@ -8,5 +8,8 @@
     "close-menu": "Zamknij menu",
     "hello": "hello,",
     "introduction": "I'm Dawid Buliński, a passionate Front-end Developer, based in Poland. Let me introduce You to my projects.",
-    "go-to-blog": "Go to blog"
-}
+    "go-to-blog": "Go to blog",
+    "linkedin-link": "Go to my linkedin profile",
+    "github-link": "Go to my github profile",
+    "scroll-down": "scroll down",
+    "go-to-top": "go to top"}

@@ -30,7 +30,7 @@ export const WelcomeScreen: FC = () => {
         variant="plain"
         className={classes.scrollDown}
       >
-        scroll down <ArrowRight />
+        {t("scroll-down")} <ArrowRight />
       </ButtonLink>
     </section>
   );

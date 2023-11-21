@@ -5,5 +5,8 @@
     "menu-contact": "kontakt",
     "go-to-homepage": "Idź do strony głównej",
     "open-menu": "Otwórz menu",
-    "close-menu": "Zamknij menu"
+    "close-menu": "Zamknij menu",
+    "hello": "hello,",
+    "introduction": "I'm Dawid Buliński, a passionate Front-end Developer, based in Poland. Let me introduce You to my projects.",
+    "go-to-blog": "Go to blog"
 }

@@ -5,5 +5,8 @@
     "menu-contact": "contact",
     "go-to-homepage": "Go to homepage",
     "open-menu": "Open menu",
-    "close-menu": "Close menu"
+    "close-menu": "Close menu",
+    "hello": "hello,",
+    "introduction": "I'm <1>Dawid Buliński</1>, a passionate Front-end Developer, based in Poland. <3>Let me introduce You to my projects.</3>",
+    "go-to-blog": "Go to blog"
 }

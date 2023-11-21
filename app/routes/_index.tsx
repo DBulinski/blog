@@ -9,5 +9,12 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <WelcomeScreen />;
+  return (
+    <>
+      <WelcomeScreen />
+      <section style={{ minHeight: "100vh" }} id="latest-posts">
+        <h2>selected works</h2>
+      </section>
+    </>
+  );
 }
